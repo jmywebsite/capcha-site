@@ -4,238 +4,151 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CAPCHA Photography — Nightlife & Event Photographer | Northern California</title>
-<meta name="description" content="CAPCHA Photography — cinematic nightlife, event and automotive photography in Northern California. Redefining Your Moment. Book Jeremiah Smith-White for your next night.">
+<meta name="description" content="CAPCHA Photography — nightlife and event photography in Northern California. Shot after dark.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
-<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#top" class="logo">CAPCHA<span class="logo-dot">.</span></a>
-    <div class="nav-links">
+    <a href="#top" class="wordmark">CAPCHA</a>
+    <div class="nav-links" id="navLinks">
       <a href="#work">Work</a>
-      <a href="#services">Services</a>
+      <a href="#presets">Presets</a>
       <a href="#about">About</a>
-      <a href="#book">Book</a>
     </div>
-    <a href="#book" class="btn btn-gold btn-sm">Book a Session</a>
+    <a href="#book" class="btn-book">Book</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
-  <div class="orb orb-1" aria-hidden="true"></div>
-  <div class="orb orb-2" aria-hidden="true"></div>
-  <div class="orb orb-3" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <p class="kicker reveal">Northern California &mdash; Nightlife &middot; Events &middot; Automotive</p>
-    <h1 class="hero-title reveal">REDEFINING<br><span class="grad-text">YOUR MOMENT</span></h1>
-    <p class="hero-sub reveal">Cinematic photography for the bold &mdash; shot after dark, graded like film, made to be remembered.</p>
-    <div class="hero-ctas reveal">
-      <a href="#book" class="btn btn-gold">Book Your Session</a>
-      <a href="#work" class="btn btn-glass">See the Work</a>
-    </div>
-    <div class="hero-stats reveal">
-      <div class="stat-chip glass"><strong>10+</strong><span>years behind the lens</span></div>
-      <div class="stat-chip glass"><strong>200+</strong><span>shoots delivered</span></div>
-      <div class="stat-chip glass"><strong>NorCal</strong><span>based in Vacaville</span></div>
-    </div>
+  <img class="hero-img" src="assets/img/hero.jpg" alt="Packed nightclub dance floor shot by CAPCHA Photography">
+  <div class="hero-shade"></div>
+  <div class="hero-text">
+    <p class="eyebrow">CAPCHA Photography — Northern California</p>
+    <h1>Shot after dark.</h1>
+    <a href="#book" class="btn-gold">Book a shoot</a>
   </div>
-  <div class="scroll-cue" aria-hidden="true"><span></span></div>
 </header>
 
-<!-- ============ MARQUEE ============ -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Nightlife</span><i>&#10022;</i><span>Events</span><i>&#10022;</i><span>Automotive</span><i>&#10022;</i><span>Portraits</span><i>&#10022;</i><span>Branding</span><i>&#10022;</i>
-    <span>Nightlife</span><i>&#10022;</i><span>Events</span><i>&#10022;</i><span>Automotive</span><i>&#10022;</i><span>Portraits</span><i>&#10022;</i><span>Branding</span><i>&#10022;</i>
+<!-- ============ WORK / CATEGORIES ============ -->
+<section class="tiles" id="work">
+  <div class="section-head">
+    <h2>Work</h2>
   </div>
-</div>
-
-<!-- ============ WORK / GALLERY ============ -->
-<section class="section" id="work">
-  <div class="wrap">
-    <p class="kicker reveal">Selected Frames</p>
-    <h2 class="section-title reveal">The <span class="grad-text">Work</span></h2>
-    <p class="section-sub reveal">Shot after dark. Lit by neon. Every frame graded with the CAPCHA signature.</p>
-    <div class="filters glass reveal" role="tablist" aria-label="Filter gallery">
-      <button class="filter active" data-filter="nightlife" role="tab">Nightlife</button>
-      <button class="filter" data-filter="events" role="tab">Events</button>
-      <button class="filter" data-filter="automotive" role="tab">Automotive</button>
-      <button class="filter" data-filter="portraits" role="tab">Portraits</button>
-    </div>
-    <div class="gallery" id="gallery"></div>
-  </div>
-</section>
-
-<!-- ============ GALLERY CTA ============ -->
-<section class="section-tight">
-  <div class="wrap">
-    <div class="cta-panel glass reveal">
-      <h3>Your night deserves to be remembered <span class="grad-text">like this.</span></h3>
-      <p>Clubs, venues, promoters, brands &mdash; if the lights are low and the energy is high, I should be shooting it.</p>
-      <a href="#book" class="btn btn-gold">Lock In Your Date</a>
-    </div>
+  <div class="tile-grid">
+    <a class="tile" href="#gallery">
+      <img src="assets/img/tile-nightlife.jpg" alt="Nightlife photography">
+      <span class="tile-label">Nightlife</span>
+    </a>
+    <a class="tile" href="#gallery">
+      <img src="assets/img/tile-events.jpg" alt="Event photography">
+      <span class="tile-label">Events</span>
+    </a>
+    <a class="tile" href="#gallery">
+      <img src="assets/img/tile-portraits.jpg" alt="Portrait photography">
+      <span class="tile-label">Portraits</span>
+    </a>
+    <a class="tile tile-soon" href="#book">
+      <span class="tile-soon-inner">
+        <span class="tile-label">Automotive</span>
+        <span class="tile-note">Next drop — book car coverage first</span>
+      </span>
+    </a>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
-<section class="section" id="services">
-  <div class="wrap">
-    <p class="kicker reveal">What I Shoot</p>
-    <h2 class="section-title reveal">Services</h2>
-    <div class="cards">
-      <article class="card glass reveal">
-        <div class="card-icon" style="--c1:#ff2ec4;--c2:#ff8a3d">&#9835;</div>
-        <h3>Nightlife Coverage</h3>
-        <p>Clubs, DJs, and late-night sets &mdash; high-energy coverage that captures the crowd, the lights, and the moments people talk about Monday morning.</p>
-      </article>
-      <article class="card glass reveal">
-        <div class="card-icon" style="--c1:#35a7ff;--c2:#7c5cff">&#9825;</div>
-        <h3>Event Photography</h3>
-        <p>Launches, galas, private parties, and brand activations. Full-event storytelling from first guest to last dance.</p>
-      </article>
-      <article class="card glass reveal">
-        <div class="card-icon" style="--c1:#ffc94d;--c2:#ff7a3d">&#9733;</div>
-        <h3>Automotive</h3>
-        <p>Stanced, exotic, classic, or daily &mdash; rolling shots, studio-style stills, and detail work that makes paint look wet.</p>
-      </article>
-      <article class="card glass reveal">
-        <div class="card-icon" style="--c1:#3ddc97;--c2:#35a7ff">&#9670;</div>
-        <h3>Brand &amp; Creative</h3>
-        <p>Editorial-style visuals for businesses, artists, and creators who need content with actual presence.</p>
-      </article>
-      <article class="card glass reveal">
-        <div class="card-icon" style="--c1:#ff8a3d;--c2:#ff2ec4">&#10022;</div>
-        <h3>Portrait Sessions</h3>
-        <p>Individual and group portraits with a cinematic edge &mdash; golden hour, city lights, or full neon.</p>
-      </article>
-      <article class="card glass reveal">
-        <div class="card-icon" style="--c1:#7c5cff;--c2:#35a7ff">?</div>
-        <h3>Something Else?</h3>
-        <p>Got a concept that doesn't fit a box? I live for the weird ones. Pitch it &mdash; let's build it.</p>
-      </article>
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="section-head">
+    <h2>9&ndash;18 SF</h2>
+    <p class="section-sub">Latest shoot — San Francisco</p>
+  </div>
+  <div class="grid" id="grid">
+    <figure class="cell wide"><img src="assets/img/g01.jpg" alt="Club exterior at night"></figure>
+    <figure class="cell"><img src="assets/img/g02.jpg" alt="Bartender at work"></figure>
+    <figure class="cell"><img src="assets/img/g03.jpg" alt="Group portrait, club night"></figure>
+    <figure class="cell"><img src="assets/img/g04.jpg" alt="Friends at the club"></figure>
+    <figure class="cell"><img src="assets/img/g05.jpg" alt="Red-lit lounge"></figure>
+    <figure class="cell"><img src="assets/img/g06.jpg" alt="DJ in red"></figure>
+    <figure class="cell wide"><img src="assets/img/g07.jpg" alt="Crowd portraits"></figure>
+    <figure class="cell"><img src="assets/img/g08.jpg" alt="DJ on decks"></figure>
+    <figure class="cell"><img src="assets/img/g09.jpg" alt="Dance floor"></figure>
+    <figure class="cell"><img src="assets/img/g10.jpg" alt="Club crowd"></figure>
+    <figure class="cell"><img src="assets/img/g11.jpg" alt="Night out"></figure>
+    <figure class="cell wide"><img src="assets/img/g12.jpg" alt="Party wide"></figure>
+    <figure class="cell"><img src="assets/img/g13.jpg" alt="DJ close"></figure>
+    <figure class="cell"><img src="assets/img/g14.jpg" alt="Dance floor energy"></figure>
+  </div>
+</section>
+
+<!-- ============ PRESETS ============ -->
+<section class="presets" id="presets">
+  <div class="presets-inner">
+    <div>
+      <h2>The Nightclub Grade</h2>
+      <p>The exact grade behind these photos — crushed blacks, neon color, film-like contrast. Built for dark rooms and loud nights.</p>
+      <a class="btn-ghost" href="mailto:bookings@capchapics.com?subject=Nightclub%20Grade%20preset">Request the preset</a>
     </div>
+    <img src="assets/img/g05.jpg" alt="Nightclub grade example">
   </div>
 </section>
 
 <!-- ============ ABOUT ============ -->
-<section class="section" id="about">
-  <div class="wrap about-grid">
-    <div class="reveal">
-      <p class="kicker">Behind the Lens</p>
-      <h2 class="section-title">Jeremiah <span class="grad-text">Smith-White</span></h2>
-      <p class="about-copy">I'm a Northern California photographer obsessed with the hours most people sleep through. For 10+ years I've been shooting the scenes where the energy peaks after midnight &mdash; nightclubs, live events, car culture &mdash; and turning them into images that feel like the night felt.</p>
-      <p class="about-copy">CAPCHA is built on one idea: <strong>redefining your moment</strong>. Not just documenting it &mdash; elevating it.</p>
-      <a href="#book" class="btn btn-glass">Let's Work Together</a>
-    </div>
-    <div class="about-badges reveal">
-      <div class="badge glass"><strong>10+</strong><span>years shooting</span></div>
-      <div class="badge glass"><strong>200+</strong><span>shoots delivered</span></div>
-      <div class="badge glass"><strong>100%</strong><span>independent &amp; local</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AREAS ============ -->
-<section class="section-tight">
-  <div class="wrap">
-    <p class="kicker reveal">Where I Shoot</p>
-    <div class="areas reveal">
-      <span class="area-pill home">Vacaville &mdash; Home Base</span>
-      <span class="area-pill">Sacramento</span>
-      <span class="area-pill">San Francisco</span>
-      <span class="area-pill">Oakland</span>
-      <span class="area-pill">San Jose</span>
-      <span class="area-pill">Napa Valley</span>
-      <span class="area-pill">Fairfield</span>
-      <span class="area-pill">Davis</span>
-    </div>
-  </div>
+<section class="about" id="about">
+  <h2>About</h2>
+  <p>Jeremiah — the photographer behind CAPCHA. Nightlife, events, and the moments in between.<br>Based in Vacaville, shooting across Northern California.</p>
 </section>
 
 <!-- ============ BOOK ============ -->
-<section class="section" id="book">
-  <div class="wrap">
-    <p class="kicker reveal">Lock It In</p>
-    <h2 class="section-title reveal">Book a <span class="grad-text">Session</span></h2>
-    <p class="section-sub reveal">Tell me about the night, the event, or the machine. I reply to every serious inquiry personally.</p>
-    <div class="book-grid">
-      <form class="book-form glass reveal" id="bookForm">
-        <div class="form-row">
-          <label>Your name<input type="text" name="name" required placeholder="Jane Doe"></label>
-          <label>Email<input type="email" name="email" required placeholder="you@email.com"></label>
-        </div>
-        <div class="form-row">
-          <label>Phone <span class="opt">(optional)</span><input type="tel" name="phone" placeholder="(555) 123-4567"></label>
-          <label>Preferred date<input type="date" name="date"></label>
-        </div>
-        <label>Session type
-          <select name="type" required>
-            <option value="" disabled selected>What are we shooting?</option>
-            <option>Nightlife / Club Coverage</option>
-            <option>Event Photography</option>
-            <option>Automotive Shoot</option>
-            <option>Portrait Session</option>
-            <option>Brand / Creative</option>
-            <option>Something Else</option>
-          </select>
-        </label>
-        <label>Tell me about your project<textarea name="details" rows="4" required placeholder="Venue, date, vibe, shot list &mdash; anything you've got."></textarea></label>
-        <button type="submit" class="btn btn-gold btn-block">Send Booking Inquiry</button>
-        <p class="form-note">Submitting opens your email app with everything filled in &mdash; just hit send.</p>
-      </form>
-      <div class="book-side reveal">
-        <a class="contact-card glass" href="https://instagram.com/capchaco" target="_blank" rel="noopener">
-          <strong>Instagram</strong><span>@capchaco &mdash; daily drops &amp; behind the scenes</span>
-        </a>
-        <div class="contact-card glass">
-          <strong>Facebook</strong><span>CAPCHA Photography &mdash; page link coming soon</span>
-        </div>
-        <a class="contact-card glass" href="mailto:bookings@capchapics.com">
-          <strong>Email</strong><span>bookings@capchapics.com</span>
-        </a>
-      </div>
+<section class="book" id="book">
+  <h2>Book</h2>
+  <p class="section-sub">Tell me about the night. I&rsquo;ll bring the camera.</p>
+  <form id="bookForm">
+    <div class="row">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email" required>
     </div>
-  </div>
+    <div class="row">
+      <input type="text" name="date" placeholder="Date (or date range)">
+      <select name="type">
+        <option>Nightclub / DJ set</option>
+        <option>Event / Party</option>
+        <option>Automotive</option>
+        <option>Portrait session</option>
+        <option>Something else</option>
+      </select>
+    </div>
+    <textarea name="details" rows="4" placeholder="Venue, city, what you're planning..." required></textarea>
+    <button type="submit" class="btn-gold">Send booking request</button>
+  </form>
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <span class="logo">CAPCHA<span class="logo-dot">.</span></span>
-      <p>Redefining Your Moment.</p>
-    </div>
-    <div class="footer-links">
-      <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#book">Book</a>
-    </div>
-    <div class="footer-links">
+<footer>
+  <div class="foot-inner">
+    <span class="wordmark sm">CAPCHA</span>
+    <div class="foot-links">
       <a href="https://instagram.com/capchaco" target="_blank" rel="noopener">Instagram</a>
-      <span class="soon">Facebook &mdash; soon</span>
+      <a href="mailto:bookings@capchapics.com">bookings@capchapics.com</a>
     </div>
+    <span class="copy">&copy; <span id="yr"></span> CAPCHA Photography</span>
   </div>
-  <p class="copyright">&copy; 2026 CAPCHA Photography &mdash; Jeremiah Smith-White. All rights reserved. Vacaville, California.</p>
 </footer>
-
-<a href="#book" class="sticky-book" id="stickyBook">Book a Session</a>
 
 <!-- ============ LIGHTBOX ============ -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
-  <button class="lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
-  <figure>
-    <img id="lbImg" src="" alt="">
-    <figcaption id="lbCap"></figcaption>
-  </figure>
-  <button class="lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+  <img id="lbImg" alt="">
+  <button class="lb-next" id="lbNext" aria-label="Next">&#8594;</button>
 </div>
 
 <script src="js/main.js"></script>
